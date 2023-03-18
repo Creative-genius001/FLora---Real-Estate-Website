@@ -53,7 +53,7 @@ function App() {
               <h1 className='text-[30px]  '>Trending Properties</h1>
               <p>Get the most popular and luxury apartment right now and get sales of the year</p>
             </div>
-            <div className='mt-8'>
+            <div className='mt-12 grid grid-cols-3 w-full items-center justify-items-center'>
               <PropertyCard />
             </div>
         </section>
