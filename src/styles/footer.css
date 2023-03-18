@@ -1,0 +1,8 @@
+.footer a{
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.footer a:hover{
+    color: #FBC100;
+}

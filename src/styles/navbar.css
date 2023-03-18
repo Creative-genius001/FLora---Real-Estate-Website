@@ -1,0 +1,29 @@
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ul li {
+    cursor: pointer;
+    padding: 2px 0;
+    position: relative;
+}
+
+.nav-ul li:after{
+    content: '';
+    background-color:  darkblue;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .2s ease-in-out;
+
+}
+
+.nav-ul li:hover:after{
+    width: 100%;
+}

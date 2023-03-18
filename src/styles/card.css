@@ -1,0 +1,18 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 25px;
+    transition: .2s all ease-in-out;
+}
+
+.card-h{
+    font-size: 20px;
+
+}
+
+.card-p{
+    line-height: 20px;
+}
+
