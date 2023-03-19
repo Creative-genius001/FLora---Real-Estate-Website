@@ -4,8 +4,12 @@ import Footer from '../src/components/Footer'
 import WorkCard from './components/WorkCard';
 import {BsArrowRightShort} from 'react-icons/bs'
 import PropertyCard from './components/PropertyCard';
+import Testimonial from './components/Testimonial';
+const image = require('./assets/others/offic.jpg')
 
 function App() {
+
+  
   return (
     <div className="App">
       <Navbar />
@@ -38,13 +42,16 @@ function App() {
           <WorkCard />
         </section>
         <section className='hero3 w-full px-[70px] py-[4rem] text-white bg-black '>
-          <div className='grid grid-cols-2'>
-            <div>
-              <h1 className='text-[40px] '>Living Spaces Designed With Perfection</h1>
+          <div className='flex justify-around items-center'>
+            <div className='w-[50%]'>
+              <h1 className='text-[40px] mb-4 '>Living Spaces Designed With Perfection</h1>
             <p className='text-[18px] mb-4 '>
-              At the forefront of disruption in the real estate industry, Cosgrove Investment Limited is shaping new lifestyles with a focus on the integration of revolutionary technology into residential and commercial real estate using sustainable methods. Cosgrove’s leadership team is composed of the industry’s highly experienced leaders with a passion for unswerving excellence. 
+              At the forefront of disruption in the real estate industry,<br /> Cosgrove Investment Limited is shaping new lifestyles with<br /> a focus on the integration of revolutionary technology into<br /> residential and commercial real estate using sustainable<br /> methods. Cosgrove’s leadership team is composed of the<br /> industry’s highly experienced leaders with a passion for<br /> unswerving excellence. 
             </p>
             <button className='font-semibold cursor-pointer flex flex-row items-center hover:text-darkblue '><span className='mr-1'>Read More </span><BsArrowRightShort /></button>
+            </div>
+            <div className='w-[370px] h-[500px] '>
+              <img src={image} alt="apartment image" className='w-full h-full object-cover ' />
             </div>
           </div>
         </section>
@@ -53,9 +60,17 @@ function App() {
               <h1 className='text-[30px]  '>Trending Properties</h1>
               <p>Get the most popular and luxury apartment right now and get sales of the year</p>
             </div>
-            <div className='mt-12 grid grid-cols-3 w-full items-center justify-items-center'>
+            <div className='mt-12 w-full'>
               <PropertyCard />
             </div>
+        </section>
+        <section className='testimonial-section w-full px-[70px] py-[4rem] bg-slate-200 '>
+          <div>
+            <h1 className='text-[30px] text-center '>What Our Clients Are Saying</h1>
+            <div>
+              <Testimonial />
+            </div>
+          </div>
         </section>
       <Footer />
     </div>
