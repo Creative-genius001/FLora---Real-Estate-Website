@@ -66,7 +66,7 @@ const PropertyCard = () => {
                             <div className='img-div  '>
                               <img src={p.image} alt={p.title} className='object-cover w-full h-full  ' />
                             </div>
-                            <div className='p-4'>
+                            <div className='property-card-content p-4'>
                               <span className='num text-[18px] text-darkblue'>${p.price}</span>
                               <h1 className='text-[24px] leading-[28px] mb-3 mt-1 cursor-pointer hover:text-darkblue  '>{p.title}</h1>
                               <span className='flex items-center'><GrLocation className='mr-2' /> <p className='font-medium'>{p.location}</p></span>

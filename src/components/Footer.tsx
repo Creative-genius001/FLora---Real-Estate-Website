@@ -23,7 +23,7 @@ const icons: props[] = [
 
   return (
     <div className='footer px-[70px] pt-[4rem] pb-[2rem] bg-black text-white'>
-      <div className='grid grid-rows-1 grid-cols-3'>
+      <div className='footer-container grid grid-rows-1 grid-cols-3'>
         <div className='flex flex-col w-auto'>
         <h1 className='mb-2 text-[18px]'>Services</h1>
         <a>Agent Registration</a>
@@ -38,13 +38,13 @@ const icons: props[] = [
         <a>New Property</a>
         <a>Contact Us</a>
       </div>
-      <div >
+      <div className='location ' >
         <h1 className='mb-2 text-[18px]'>Our Location</h1>
         <span>4th Floor, Mukhtar El Yakub Building Zakariyya Maimalari Street, Central Business District Abuja. FCT 900211 Nigeria.</span>
         <div className='flex mt-4'>
           {icons?.map((i, index)=> {
             return(
-              <div key={index} className='mr-8 rounded-[50%] p-2 cursor-pointer '><span className='hover:text-darkblue'>{i.icon}</span></div>
+              <div key={index} className='mr-8 rounded-[50%] cursor-pointer '><span className='hover:text-darkblue'>{i.icon}</span></div>
             )
           })}
         </div>

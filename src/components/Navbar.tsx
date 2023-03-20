@@ -6,7 +6,7 @@ const Flora = require('../assets/logo/Flora.svg').default;
 
 const Navbar = () => {
   return (
-    <div className='w-full h-[80px] bg-[#000000c7] py-[10px] px-[70px] flex justify-between items-center '>
+    <div className='nav w-full h-[80px] bg-[#000000c7] py-[10px] px-[70px] flex justify-between items-center '>
         <div className='logo flex flex-col justify-center items-center '>
             <img src={Logo} className='' alt='flora' />
             <img src={Flora} className='' alt='flora' />

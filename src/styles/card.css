@@ -16,3 +16,20 @@
     line-height: 20px;
 }
 
+@media screen and (min-width:320px) and (max-width: 720px) {
+    .cards-container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-p{
+        text-align: center;
+    }
+}

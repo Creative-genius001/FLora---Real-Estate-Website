@@ -1,6 +1,9 @@
 import React from 'react'
 import { Avatar, Card, Rate } from 'antd'
 import {testimonialData} from '../data/testimonialData'
+import { motion } from 'framer-motion';
+
+
 function Testimonial() {
 
   const { Meta } = Card;

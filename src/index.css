@@ -27,8 +27,10 @@ h3{
   font-weight: 500;
 }
 
-.hero-section{
- 
+button:hover{
+  background-color: #d3a2020a;
+  border: 1px solid #FBC100;
+  transition: .3s all ease-in-out;
 }
 
 .num{
@@ -73,6 +75,7 @@ h3{
   width: 100vw;
   height: 100vh;
   z-index: -10;
+  object-fit: cover;
 }
 
 .swiper-pagination-bullet{
@@ -84,7 +87,7 @@ h3{
 @media (min-aspect-ratio:16/9){
   .background-clip{
     width: 100%;
-    height: auto;
+    height: 100vh;
   }
 }
 
@@ -93,4 +96,119 @@ h3{
     width: auto;
     height: 100%;
   }
+}
+
+@media screen and (min-width:320px) and (max-width: 720px) {
+    .hero-section{
+        padding: 4rem 30px;
+        
+    }
+    .hero-content{
+      width: 100%;
+    }
+    .hero-section h1{
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .hero-content p{
+      font-size: 16px;
+      width: 90%;
+      line-height: 20px;
+    }
+
+    /*hero two */
+    .hero2{
+        padding: 4rem 30px;
+        
+    }
+    .hero2{
+      
+    }
+    .hero2 p{
+      width: 100%;
+    }
+
+    /*hero three*/
+    .hero3{
+      padding: 4rem 30px;
+    }
+    .hero3-container{
+      flex-direction: column;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .hero3-content{
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    .hero3 h1{
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: .7rem;
+    }
+    .hero3 p{
+      line-height: 24px;
+    }
+
+    /*hero four */
+    .hero4{
+      padding: 4rem 30px;
+    }
+    .hero4 p{
+      text-align: center;
+    }
+    .property-container{
+      padding: 0 50px;
+    }
+    .property-card-content h1{
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+
+    /*hero five */
+    .hero5{
+      padding: 4rem 30px;
+    }
+    .hero5 h1{
+      font-size: 24px;
+      line-height: 30px;
+      width: 100%;
+    }
+
+    /*testimonial section */
+    .testimonial-section{
+      padding: 4rem 30px;
+    }
+    .testimonial-section h1{
+      font-size: 26px;
+      line-height: 30px;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .testimonial-container{
+      grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+    /* news-letter section */
+    .news-letter{
+       padding: 4rem 30px;
+    }
+    .news-letter h1{
+      font-size: 24px;
+      text-align: center;
+    }
+    .news-letter p{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .news-letter .subscribe{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 }
