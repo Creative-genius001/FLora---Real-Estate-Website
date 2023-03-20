@@ -50,8 +50,8 @@ const icons: props[] = [
         </div>
       </div>
     </div>
-    <div className='mt-[3rem] pt-3 ' style={{borderTop: "1px solid white"}}>
-      <span className='text-center'>@Copyright Access. All Rights Reserved.</span>
+    <div className='mt-[3rem] pt-3 text-center' style={{borderTop: "1px solid white"}}>
+      <span className='text-center text-sm'>@Designed by Ovie. All Rights Reserved.</span>
     </div>
       
     </div>
