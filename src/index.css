@@ -164,7 +164,8 @@ button:hover{
       text-align: center;
     }
     .property-container{
-      padding: 0 50px;
+      padding: 0 0px;
+      width: 100%;
     }
     .property-card-content h1{
       font-size: 20px;
@@ -196,8 +197,15 @@ button:hover{
       grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
       grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     }
+    .testimonial-card{
+      width: 100%;
+    }
 
     /* news-letter section */
+    .subscribe input{
+      text-align: center;
+      width: 100%;
+    }
     .news-letter{
        padding: 4rem 30px;
     }

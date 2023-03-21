@@ -11,8 +11,8 @@ function Testimonial() {
     <>
     {testimonialData?.map((data,index)=>{
       return(
-          <Card
-            style={{zIndex: "", position: "relative", width: "370px", height: "auto", marginTop: 16, fontFamily: "Syne", paddingTop: "17px", paddingBottom: "30px", paddingLeft: "10px", paddingRight: "10px" }}>
+          <Card className='testimonial-card w-[370px]'
+            style={{zIndex: "", position: "relative", height: "auto", marginTop: 16, fontFamily: "Syne", paddingTop: "17px", paddingBottom: "30px", paddingLeft: "10px", paddingRight: "10px" }}>
           <Meta
             avatar={<Avatar src="https://joesch.moe/api/v1/random?key=2" />}
             title={data.name}
