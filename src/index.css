@@ -101,6 +101,7 @@ button:hover{
 @media screen and (min-width:320px) and (max-width: 720px) {
     .hero-section{
         padding: 4rem 30px;
+        height: 100vh;
         
     }
     .hero-content{

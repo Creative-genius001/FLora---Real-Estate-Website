@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-        <section className='hero-section w-full h-[calc(100vh-80px)] bg-[#000000c7] px-[70px] flex items-center '>
+        <section className='hero-section w-full h-[100vh] bg-[#000000c7] px-[70px] flex items-center '>
             <video autoPlay loop muted playsInline className='background-clip'>
                 <source src={videoBg} type='video/mp4' />
               </video>
@@ -61,8 +61,8 @@ function App() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{delay: 0.5, duration: 1.3}}
               viewport={{ once: true }}
-            className='w-[370px] h-[500px] '>
-              <img src={image} alt="apartment image" className='w-full h-full object-cover ' />
+            className='w-[370px] h-[470px] relative rounded-[12px] '>
+              <img src={image} alt="apartment image" className='w-full h-full object-cover rounded-[12px]' />
             </motion.div>
           </div>
         </section>

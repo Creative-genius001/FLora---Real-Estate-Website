@@ -29,11 +29,86 @@
     width: 100%;
 }
 
+.menu-icon{
+    visibility: hidden;
+}
+
+.nav-ul-mobile{
+        display: none;
+    }
+.nav.scrolled {
+  background-color: black;
+  animation: navBg 0.2s ease-in-out;
+}
+
+.nav.scrolled .nav-ul li{
+    color: white;
+}
+
+.nav{
+    z-index: 100;
+}
+
+@keyframes navBg {
+    from{background-color: transparent;}
+    to{background-color: black;}
+}
 
 @media screen and (min-width:320px) and (max-width: 720px) {
     .nav{
         height: 60px;
-        background-color: #FBC100;
         padding: 10px 30px;
+        background-color: transparent;
     }
+    .menu-icon{
+        visibility: visible;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .nav-ul{
+        display: none;
+    }
+    .nav-ul-mobile.active{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: black;
+        padding: 20px 10px;
+        animation: menu .8s ease alternate;
+    }
+    .nav-ul-mobile{  
+        right: -500px;
+        animation: eximenu 2s ease;
+    }
+
+    @keyframes menu {
+            from{right: -130px; opacity: 0;}
+            to{right: 0; opacity: 1;}
+    }
+    @keyframes eximenu {
+            from{right: 0px; opacity: 1;}
+            to{right: -130px; opacity: 0;}
+    }
+
+    .nav-ul-mobile li {
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 1rem;
+        transition: .2s all ease-in-out;
+
+    }
+    .nav-ul-mobile li:nth-child(1){
+        margin-top: 2rem;
+    }
+    .nav-ul-mobile li:hover{
+        color:#FBC100;
+    }
+
 }

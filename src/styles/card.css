@@ -15,7 +15,9 @@
 .card-p{
     line-height: 20px;
 }
-
+.card-container{
+    background-color: aqua;
+}
 @media screen and (min-width:320px) and (max-width: 720px) {
     .cards-container{
         width: 100%;

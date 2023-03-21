@@ -40,7 +40,7 @@ const WorkCard = () => {
                     y : {delay: 0.5, duration: 0.4}
                  }}
                 viewport={{ once: true }}
-    className='cards-container flex justify-between mt-12 w-[80%] mx-auto'>
+    className='cards-container flex justify-between mt-12 w-[80%] mx-auto '>
         { data?.map(d=> {
             return(
                 <motion.div

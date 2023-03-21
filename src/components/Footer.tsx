@@ -26,17 +26,17 @@ const icons: props[] = [
       <div className='footer-container grid grid-rows-1 grid-cols-3'>
         <div className='flex flex-col w-auto'>
         <h1 className='mb-2 text-[18px]'>Services</h1>
-        <a>Agent Registration</a>
-        <a>Privacy Policy</a>
-        <a>Career</a>
+        <a href='/'>Agent Registration</a>
+        <a href='/'>Privacy Policy</a>
+        <a href='/'>Career</a>
       </div>
       <div className='flex flex-col'>
         <h1 className='mb-2 text-[18px]'>About</h1>
-        <a>About Us</a>
-        <a>News</a>
-        <a>Pricing</a>
-        <a>New Property</a>
-        <a>Contact Us</a>
+        <a href='/'>About Us</a>
+        <a href='/'>News</a>
+        <a href='/'>Pricing</a>
+        <a href='/'>New Property</a>
+        <a href='/'>Contact Us</a>
       </div>
       <div className='location ' >
         <h1 className='mb-2 text-[18px]'>Our Location</h1>
