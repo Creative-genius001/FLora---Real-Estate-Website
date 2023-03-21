@@ -94,7 +94,7 @@ button:hover{
 @media (max-aspect-ratio:16/9){
   .background-clip{
     width: auto;
-    height: 100%;
+    height: 100vh;
   }
 }
 
@@ -150,6 +150,10 @@ button:hover{
     }
     .hero3 p{
       line-height: 24px;
+    }
+    .img-div{
+      width: 100%;
+      height: 370px;
     }
 
     /*hero four */

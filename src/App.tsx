@@ -61,7 +61,7 @@ function App() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{delay: 0.5, duration: 1.3}}
               viewport={{ once: true }}
-            className='w-[370px] h-[470px] relative rounded-[12px] '>
+            className='img-div w-[370px] h-[470px] relative rounded-[12px] '>
               <img src={image} alt="apartment image" className='w-full h-full object-cover rounded-[12px]' />
             </motion.div>
           </div>

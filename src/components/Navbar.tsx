@@ -32,7 +32,7 @@ const Navbar = () => {
   
   return (
     <div className={windowHeight > 100 ? navStyleBg : navStyle}>
-        <div className='logo flex flex-col justify-center items-center h-full w-[110px] '>
+        <div className='logo flex flex-col justify-center items-center h-[full] w-[110px] '>
               <img src={Logo} className='' alt='flora' />
         </div>
         <div className='links w-[500px]'>
